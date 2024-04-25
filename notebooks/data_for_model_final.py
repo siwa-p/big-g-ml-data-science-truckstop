@@ -1,3 +1,5 @@
+
+# run this after running target_extraction.py
 import pandas as pd
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 chosen_equipments_dummies = pd.read_csv('data/chosen_equipments_dummies_target.csv', index_col= False)

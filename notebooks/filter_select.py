@@ -1,3 +1,5 @@
+
+# filter data with chosen columns and chosen equipments
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -52,7 +54,7 @@ features_to_choose = list(filter(lambda x: x not in set(features_to_drop),all_fe
 # new proportions dataframe with chosen features
 nan_proportion_df_2 = nan_proportion_df[nan_proportion_df['feature'].isin(features_to_choose)]
 
-# filter to obtain equipments with least nans
+# filter to obtain equipments with least nans ( <50 percent )
 equipments_with_nan_below_threshold = nan_proportion_df_2.groupby('equipment_id')['value'].apply(lambda x: (x < 0.5).all())
 equipments_with_least_nans = equipments_with_nan_below_threshold[equipments_with_nan_below_threshold].index.to_list()
 
@@ -103,7 +105,7 @@ merged_chosen_equipments_geo.to_crs(epsg = 3310, inplace = True)
 
 
 
-
+# remove data with locations within 5 miles of service centers
 #create service center geo dataframe
 service_centers = [
     (36.0666667, -86.4347222), 

@@ -1,3 +1,6 @@
+
+# don't have to run this
+# this code is used to find features with least number of nan values
 import pandas as pd
 import numpy as np
 import json
