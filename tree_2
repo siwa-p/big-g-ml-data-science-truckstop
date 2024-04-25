@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="pair_3361_2 <= 48.623\nsamples = 100.0%\nvalue = [0.532, 0.468]", fillcolor="#fcf0e7"] ;
+1 [label="pair_929_9 <= -0.424\nsamples = 100.0%\nvalue = [0.558, 0.442]", fillcolor="#fae5d6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="pair_5394_5 <= 39.069\nsamples = 79.9%\nvalue = [0.502, 0.498]", fillcolor="#fffefe"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+68 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 68 ;
+73 [label="pair_596_31 <= 0.43\nsamples = 20.1%\nvalue = [1.0, 0.0]", fillcolor="#e58139"] ;
+1 -> 73 ;
+74 [label="(...)", fillcolor="#C0C0C0"] ;
+73 -> 74 ;
+75 [label="(...)", fillcolor="#C0C0C0"] ;
+73 -> 75 ;
+76 [label="pair_3362_31 <= 1.411\nsamples = 0.0%\nvalue = [0.001, 0.999]", fillcolor="#399de5"] ;
+0 -> 76 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+77 [label="pair_3361_12 <= 18.645\nsamples = 0.0%\nvalue = [0.002, 0.998]", fillcolor="#399de5"] ;
+76 -> 77 ;
+78 [label="(...)", fillcolor="#C0C0C0"] ;
+77 -> 78 ;
+79 [label="(...)", fillcolor="#C0C0C0"] ;
+77 -> 79 ;
+80 [label="pair_111_17 <= -0.358\nsamples = 0.0%\nvalue = [0.001, 0.999]", fillcolor="#399de5"] ;
+76 -> 80 ;
+81 [label="(...)", fillcolor="#C0C0C0"] ;
+80 -> 81 ;
+84 [label="(...)", fillcolor="#C0C0C0"] ;
+80 -> 84 ;
+}
